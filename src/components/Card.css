@@ -1,0 +1,31 @@
+.card-container {
+    margin:2rem;
+    width: 175px;
+    font-size: .8rem;
+}
+
+.card-image {
+width: 100%;
+border-radius: 9px;
+}
+
+.card-body {
+    padding-top: .5rem;
+    
+}
+
+.card-body span, img {
+    padding-right:.4rem;
+}
+
+.card-body img {
+    width: 1.2rem;
+}
+.card-body p {
+    padding: .2rem;
+    margin:0rem;
+}
+
+.gray {
+   color: #918E9B;
+}
