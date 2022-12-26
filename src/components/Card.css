@@ -2,12 +2,19 @@
     margin:2rem;
     width: 175px;
     font-size: .8rem;
+
+    flex: 0 0 auto;         /* ADD */
+    display: flex;          /* ADD */
+    flex-direction: column; /* ADD */
 }
 
+
 .card-image {
-width: 100%;
-border-radius: 9px;
+ width: 100%;
+ border-radius: 9px;
+ margin-bottom: 9px;
 }
+
 
 .card-body {
     padding-top: .5rem;
@@ -28,4 +35,42 @@ border-radius: 9px;
 
 .gray {
    color: #918E9B;
+}
+
+
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.card {
+    width: 175px;
+    font-size: 12px;
+    flex: 0 0 auto;         /* ADD */
+    display: flex;          /* ADD */
+    flex-direction: column; /* ADD */
+}
+
+
+
+/* ADD */
+.card--title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card--stats {
+    display: flex;
+    align-items: center;
+}
+
+.card--star {
+    height: 14px;
+}
+
+/* ADD */
+.card--price {
+    margin-top: auto;
 }
