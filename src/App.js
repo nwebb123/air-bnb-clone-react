@@ -9,12 +9,17 @@ function App() {
     return (
       <Card
         key={exp.id}
-        img={exp.coverImg}
-        rating={exp.stats.rating}
-        reviewCount={exp.stats.reviewCount}
-        location={exp.location}
-        title={exp.title}
-        price={exp.price}
+        exp={exp}
+        /* No need to pass props in 1 by 1 like below; Better to pass in an instance of an object (exp in example above) to the card component. 
+         Another way would be to use the spread operator to pass an instance of an object into a component. For example, {...exp}.
+        */
+        // img={exp.coverImg}
+        // rating={exp.stats.rating}
+        // reviewCount={exp.stats.reviewCount}
+        // location={exp.location}
+        // title={exp.title}
+        // price={exp.price}
+        // openSpots={exp.openSpots}
       />
     );
   });

@@ -1,76 +1,61 @@
-.card-container {
-    margin:2rem;
-    width: 175px;
-    font-size: .8rem;
-
-    flex: 0 0 auto;         /* ADD */
-    display: flex;          /* ADD */
-    flex-direction: column; /* ADD */
-}
-
-
-.card-image {
- width: 100%;
- border-radius: 9px;
- margin-bottom: 9px;
-}
-
-
-.card-body {
-    padding-top: .5rem;
-    
-}
-
-.card-body span, img {
-    padding-right:.4rem;
-}
-
-.card-body img {
-    width: 1.2rem;
-}
-.card-body p {
-    padding: .2rem;
-    margin:0rem;
-}
-
-.gray {
-   color: #918E9B;
-}
-
-
 .cards-list {
     display: flex;
     flex-wrap: nowrap;
     gap: 20px;
     overflow-x: auto;
+    padding: 1rem;
+    /* justify-content: center; */
 }
 
-.card {
+.card-container {
     width: 175px;
-    font-size: 12px;
-    flex: 0 0 auto;         /* ADD */
-    display: flex;          /* ADD */
-    flex-direction: column; /* ADD */
+    font-size: .7rem;
+    flex: 0 0 auto;         
+    display: flex;          
+    flex-direction: column; 
+    position: relative;
 }
 
+.card-image {
+    width: 100%;
+    height: 15rem;
+    border-radius: 9px;
+    margin-bottom: 9px;
+    cursor:pointer;
+}
 
-
-/* ADD */
-.card--title {
+.card-title {
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-top:.3rem;
+    margin-bottom:.3rem;
 }
 
-.card--stats {
+.card-body {
     display: flex;
     align-items: center;
+    gap: .2rem;
+  
 }
 
-.card--star {
+.card-star {
     height: 14px;
 }
 
-/* ADD */
-.card--price {
+.card-price {
     margin-top: auto;
+}
+
+.gray {
+    color:#918E9B;
+}
+
+.card-badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
 }
