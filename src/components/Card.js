@@ -13,18 +13,18 @@ function Card(props) {
 
   return (
     <div className="card-container">
-      {props.openSpots === 0 && <div className="card-badge">SOLD OUT</div>}
-      <img src={`../imgs/${props.img}`} alt="" className="card-image" />
+      {props.exp.openSpots === 0 && <div className="card-badge">SOLD OUT</div>}
+      <img src={`../imgs/${props.exp.coverImg}`} alt="" className="card-image" />
 
       <div className="card-body">
         <img src={star} alt="Review Star" className="card-star" />
-        <span>{props.rating}</span>
-        <span className="gray">({props.reviewCount})</span>
-        <span className="gray">&#x2022; {props.location}</span>
+        <span>{props.exp.stats.rating}</span>
+        <span className="gray">({props.exp.stats.reviewCount})</span>
+        <span className="gray">&#x2022; {props.exp.location}</span>
       </div>
-      <p className="card-title">{props.title}</p>
+      <p className="card-title">{props.exp.title}</p>
       <p className="card-price">
-        <b>From ${props.price}</b>/ person
+        <b>From ${props.exp.price}</b>/ person
       </p>
     </div>
   );
