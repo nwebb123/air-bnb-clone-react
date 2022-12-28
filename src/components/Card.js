@@ -1,11 +1,19 @@
 import React from "react";
 import "./Card.css";
 
-import star from "../imgs/star.png";
+import star from "../srcimgs/star.png";
 
 function Card(props) {
+  /*Could also conditionally render "Sold out" div here using something like this:
+   let badgeText;
+   if (props.openSpots === 0) {
+    badgeText = "SOLD OUT"
+   }
+  */
+
   return (
     <div className="card-container">
+      {props.openSpots === 0 && <div className="card-badge">SOLD OUT</div>}
       <img src={`../imgs/${props.img}`} alt="" className="card-image" />
 
       <div className="card-body">

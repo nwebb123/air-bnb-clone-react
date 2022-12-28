@@ -1,5 +1,5 @@
 import React from "react";
-import cardGroup from "../imgs/card-group.png";
+import cardGroup from "../srcimgs/card-group.png";
 import "./Hero.css";
 
 function Hero() {
